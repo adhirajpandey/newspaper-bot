@@ -35,7 +35,7 @@ This Program uses :
   ![installation](https://user-images.githubusercontent.com/87516052/199808153-97565f6e-9700-4f88-b42b-323577a7f3a7.png)
   
   
-- Edit and Run main.py
+- Edit Configuration Segemnent and Run main.py
 
   ![run](https://user-images.githubusercontent.com/87516052/199808915-4b7f41d8-8abd-492c-a11e-fe6a6c29a853.png)
   
