@@ -35,8 +35,9 @@ def scrape(url):
     return soup1
 
 #funtion to transform link for the specified date
-def transform_link(date):
-    link = "https://www.gkgsca.com/2022/11/the-hindu-pdf-" + date + "-free.html#AT-downloadPop"
+def transform_link(year,month,date):
+    #sample link : "https://www.gkgsca.com/2022/10/the-hindu-pdf-08-october-2022-free.html#AT-downloadPop"
+    link = "https://www.gkgsca.com/" + year + "/" + month + "/the-hindu-pdf-" + date + "-free.html#AT-downloadPop"
     return link
 
 #funtion to mail the link
@@ -83,8 +84,12 @@ def send_discord_message():
 date = date.today().strftime("%d-%B-%Y").lower()
 fdate = dt.today().strftime("%d-%m-%Y")
 
+#get the month and year from the date
+month = dt.today().strftime("%d-%m-%Y")[3:5]
+year = dt.today().strftime("%d-%m-%Y")[6:10]
+
 #transform link for today's date
-link = transform_link(date)
+link = transform_link(year,month,date)
 
 #scrape the page
 a = (scrape(link))
