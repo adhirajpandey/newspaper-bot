@@ -5,12 +5,12 @@
 Script to fetch The Hindu Newspaper pdf daily and send it through mail and discord.
 
 This Program uses : 
-- Datatime to get formatted date
+- Datetime to get formatted date
 - Beautiful Soup to extract pdf link from website
 - Smtplib to send mail
-- SSL to send secure the mail tunnel
+- SSL to secure the mail tunnel
 - Discord Webhook to send message to particular channel
-- Requests to trigger and send request to webhoook
+- Requests to trigger and send message request through webhoook
 
 # Requirements
 
